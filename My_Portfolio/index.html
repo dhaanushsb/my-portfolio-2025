@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./Images/icons8-portfolio-64.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Portfolio.</a>
+      <nav class="navbar">
+        <a href="#Home" style="--i: 1">Home</a>
+        <a href="#About" style="--i: 2">About</a>
+        <a href="#Skills" style="--i: 4">Skills</a>
+        <a href="#Projects" style="--i: 5">Projects</a>
+        <a href="#Contact" style="--i: 3">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="Home">
+      <div class="home-sci">
+        <a href="https://www.facebook.com/"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/dhaanush_sb/"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/dhaanush-s-b-557293250/"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/dhaanushsb/"><i class="bx bxl-github"></i></a>
+      </div>
+      <div class="home-content">
+        <h1>Hi, I'm DHAANUSH S B</h1>
+        <br />
+        <h3>Junior Java & SQL Developer</h3>
+        <br />
+        <a href="#Contact" class="btn">Contact Me</a>
+      </div>
+      <div class="home-img">
+        <div class="glow">
+          <span></span>
+          <span></span>
+          <div class="image">
+            <img src="./Images/20230224_111128 conv.jpeg" alt="Dhaanush_Profile" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="About">
+      <div class="about-content">
+        <div class="about-image">
+          <div class="home-img">
+            <div class="glow">
+              <span></span>
+              <span></span>
+              <div class="image">
+                <img src="./Images/Dhaanush_image1.jpg" alt="Dhaanush S B" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="heading">About <span>Me</span></h2>
+          <h3 class="text-animation">
+            <span class="line">Passionate Full-Stack Developer</span>
+          </h3>
+          <p>
+            I'm a detail-oriented and self-motivated fresher passionate about building innovative web solutions. My foundation in front-end and back-end web development, programming principles, and database management provides a solid base for creating effective and user-friendly applications. I enjoy the entire development process, from initial concept and design to implementation and testing, and I'm always striving to write clean, efficient, and maintainable code. My strong problem-solving skills enable me to tackle challenges effectively, and I'm eager to contribute my technical expertise and continue learning in a collaborative professional setting.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="Skills">
+      <h2 class="heading">Skills <span>Overview</span></h2>
+      <div class="skills-container">
+        <div class="skill-box">
+          <h2>Frontend</h2>
+          <div class="sub-skills">
+            <div class="sub-skill">HTML</div>
+            <div class="sub-skill">CSS</div>
+            <div class="sub-skill">JavaScript Fundamentals</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h2>Database</h2>
+          <div class="sub-skills">
+            <div class="sub-skill">MySQL</div>
+            <div class="sub-skill">Oracle</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h2>Languages</h2>
+          <div class="sub-skills">
+            <div class="sub-skill">Java</div>
+            <div class="sub-skill">Python</div>
+            <div class="sub-skill">SQL</div>
+          </div>
+        </div>
+        <div class="skill-box">
+          <h2>Tools</h2>
+          <div class="sub-skills">
+            <div class="sub-skill">Git and Github</div>
+            <div class="sub-skill">Visual Studio Code</div>
+            <div class="sub-skill">Eclipse IDE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="Projects">
+      <h1 class="prheading">Projects <span>Showcase</span></h1>
+      <div class="projects-container">
+        <div class="project-box">
+          <h3 class="Flipkart">E-Commerce Website</h3>
+          <p>
+            Developed a fully functional e-commerce platform featuring a home page, product listings with prices, and a shopping cart. Proficient in front-end development using HTML, CSS, and JavaScript, focusing on dynamic product display and a user-friendly interface for seamless navigation.
+          </p>
+          <a href="https://github.com/dhaanushsb/E-Commerce-Website" class="btn">View Project</a>
+        </div>
+        <div class="project-box">
+          <h3 class="netflix">Banking Application</h3>
+          <p>
+            Built a console-based banking system using Java, JDBC, and Oracle Database. Implemented core banking operations: balance checks, deposits, and withdrawals. Leveraged SQL queries for data integrity and designed an intuitive menu-driven user interface.
+          </p>
+          <a href="https://github.com/dhaanushsb/Banking_Application_Project" class="btn">View Project</a>
+        </div>
+        <div class="project-box">
+          <h3 class="spotify">Task Management Application</h3>
+          <p>
+            Created a task management application with HTML, CSS, and JavaScript for adding, deleting, and completing tasks. Implemented a user-friendly interface to enhance task tracking and productivity.
+          </p>
+          <a href="https://github.com/dhaanushsb/JS-task/tree/main/TODO_List" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="Contact">
+      <div class="contact-content">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <p>Feel free to reach out!</p>
+        <form class="contact-form" onsubmit="sendMail(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
